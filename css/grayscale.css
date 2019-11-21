@@ -1,0 +1,431 @@
+/*!
+ * Start Bootstrap - Grayscale v5.0.9 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
+
+ @font-face {
+  font-family: Rufina;
+  src: url(../font/Rufina-Bold.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../font/Raleway-Medium.ttf);
+}
+
+#mainNav {
+  min-height: 56px;
+  background-color: #161616;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  padding: .9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: #fff;
+  }
+  #mainNav .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: #fff;
+    transition: transform 0.5s ease;
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+    transform: scale(1.1);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #161616;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #fff;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #64a19d;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #64a19d;
+    outline: none;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("../img/main-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: Rufina;
+  font-size: 2rem;
+  line-height: 1.74rem;
+  color: #fff;
+  /* letter-spacing: 0.8rem; */
+  /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+.masthead h4 {
+  font-size: 0.425rem;
+  line-height: 2.2rem;
+  color: #fff;
+  -webkit-background-clip: text;
+}
+
+.masthead a {
+  text-decoration: none;
+  color: #32C5FF;
+  background-color: transparent;
+  border: solid 1px #32C5FF;
+  text-align: center;
+  letter-spacing: .5px;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  .masthead h4 {
+    font-size: 0.7rem;
+    line-height: 2.2rem;
+    color: #fff;
+    -webkit-background-clip: text;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 3.3rem;
+    line-height: 4.6rem;
+    /* letter-spacing: 0.8rem; */
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+  .masthead h4 {
+    font-size: 1.125rem;
+    line-height: 2.2rem;
+    color: #fff;
+    -webkit-background-clip: text;
+  }
+}
+
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 0.625rem 2rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #3BB9FF;
+}
+
+.btn-primary:hover {
+  background-color: #32C5FF;
+}
+
+.btn-primary:focus {
+  background-color: #32C5FF;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: #467370 !important;
+}
+
+/* Partner Sectoin */
+.partners-section {
+  padding-top: 10rem;
+  padding: 8rem 0 10rem 0;
+  /* background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%); */
+}
+
+.partners-section p {
+  margin-bottom: 5rem;
+}
+
+.partners-section h2{
+  font-family: Rufina;
+}
+
+.partners-section img{
+  margin-top: 25px;
+}
+
+/* About Us Section */
+.about-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background: url("../img/Aboutus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.platforms-section h2,
+.about-section h2,
+.media-section h2 {
+  font-family: Rufina;
+}
+
+.about-section h4,
+.media-section h4 {
+  font-size: 1.125rem;
+  line-height: 2.2rem;
+  color: #fff;
+  -webkit-background-clip: text;
+}
+
+.platforms-section h3,
+.media-section h3 {
+  font-family: Rufina;
+}
+
+.platforms-section h3,
+.media-section h3 {
+  font-size: 1.56rem;
+}
+
+.platforms-section h4 {
+  font-size: 1.125rem;
+  line-height: 2.2rem;
+  color: #fff;
+  -webkit-background-clip: text;
+}
+
+.platform-trading-section {
+  position: relative;
+  width: auto;
+  height: 100%;
+  min-height: 30rem;
+  background: url("../img/platform_trading.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.platform-club-section {
+  position: relative;
+  width: auto;
+  height: 100%;
+  min-height: 30rem;
+  background: url("../img/platform_club.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.projects-section {
+  padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+.signup-section {
+  padding: 4rem 0;
+  background-color: #212121;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 0.625rem 2rem;
+  height: auto;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+  max-width: 410px;
+}
+
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #64a19d;
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+body {
+  font-family: Raleway;
+  letter-spacing: 0.0625em;
+  background-color: #000;
+}
+
+a {
+  color: #64a19d;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #3c6360;
+}
+
+.bg-black {
+  background-color: #161616 !important;
+}
+
+.bg-primary {
+  background-color: #64a19d !important;
+}
+
+.text-primary {
+  color: #64a19d !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+.blockquote {
+  font-family: Rufina;
+  font-size: 2.8rem;
+  color: #fff;
+}
