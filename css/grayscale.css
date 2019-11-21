@@ -6,7 +6,8 @@
 
  @font-face {
   font-family: Rufina;
-  src: url(../font/Rufina-Bold.ttf);
+  src: url(../font/Rufina-Regular.ttf);
+  /* src: url(../font/Rufina-Bold.ttf); */
 }
 
 @font-face {
@@ -20,10 +21,8 @@
 }
 
 #mainNav .navbar-toggler {
-  font-size: 80%;
   padding: 0.75rem;
   color: #fff;
-  border: 1px solid #fff;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -33,7 +32,6 @@
 #mainNav .navbar-brand {
   color: #fff;
   font-weight: 700;
-  padding: .9rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -92,7 +90,7 @@
   #mainNav.navbar-shrink .nav-link.active {
     color: #64a19d;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #fff;
   }
 }
 
@@ -112,7 +110,6 @@
 .masthead h1 {
   font-family: Rufina;
   font-size: 2rem;
-  line-height: 1.74rem;
   color: #fff;
   /* letter-spacing: 0.8rem; */
   /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
@@ -126,13 +123,14 @@
 }
 
 .masthead h4 {
-  font-size: 0.425rem;
-  line-height: 2.2rem;
+  font-size: 1rem;
+  line-height: 2rem;
   color: #fff;
   -webkit-background-clip: text;
 }
 
-.masthead a {
+.masthead a,
+.contact-section button {
   text-decoration: none;
   color: #32C5FF;
   background-color: transparent;
@@ -144,13 +142,15 @@
 
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.8rem;
+    max-width: 70%;
   }
   .masthead h4 {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     line-height: 2.2rem;
     color: #fff;
+    max-width: 60%;
     -webkit-background-clip: text;
   }
 }
@@ -163,6 +163,7 @@
   .masthead h1 {
     font-size: 3.3rem;
     line-height: 4.6rem;
+    max-width: 60%;
     /* letter-spacing: 0.8rem; */
   }
   .masthead h2 {
@@ -172,6 +173,7 @@
   .masthead h4 {
     font-size: 1.125rem;
     line-height: 2.2rem;
+    max-width: 45%;
     color: #fff;
     -webkit-background-clip: text;
   }
@@ -215,7 +217,8 @@
   margin-bottom: 5rem;
 }
 
-.partners-section h2{
+.partners-section h2,
+.contact-section h2 {
   font-family: Rufina;
 }
 
@@ -297,6 +300,10 @@
   background-size: cover;
 }
 
+.media-section .card-body {
+  color: #000;
+}
+
 .projects-section {
   padding: 10rem 0;
 }
@@ -350,19 +357,35 @@
 }
 
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 10rem 0 3rem 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background: url("../img/footer-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-.contact-section .card {
-  border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+.contact-section h5,
+.contact-section p {
+  font-size: 0.875rem;
 }
 
-.contact-section .card h4 {
-  font-size: 0.8rem;
-  font-family: 'Varela Round';
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
+.contact-section img {
+  max-height: 21px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  background-color: #212121;
+  border: none;
+}
+
+.contact-section form {
+  margin-top: 5rem;;
 }
 
 .contact-section .card hr {
@@ -371,11 +394,13 @@
   width: 3rem;
 }
 
-.contact-section .social {
-  margin-top: 5rem;
+.contact-section .social,
+.contact-section .social-mobile {
+  margin-top: 7rem;
+  padding-top: 1rem;
 }
 
-.contact-section .social a {
+.contact-section .social-mobile a {
   text-align: center;
   height: 3rem;
   width: 3rem;
@@ -385,11 +410,13 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.contact-section .social a:hover {
+.contact-section .social,
+.contact-section .social-mobile a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.contact-section .social a:active {
+.contact-section .social,
+.contact-section .social-mobile a:active {
   color: #fff;
 }
 
@@ -397,15 +424,16 @@ body {
   font-family: Raleway;
   letter-spacing: 0.0625em;
   background-color: #000;
+  color: #fff;
 }
 
 a {
-  color: #64a19d;
+  color: #6E6E6E;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #fff;
 }
 
 .bg-black {
@@ -428,4 +456,33 @@ footer {
   font-family: Rufina;
   font-size: 2.8rem;
   color: #fff;
+}
+
+.icon-img {
+  min-width: 30px;
+  margin-right: 20px;
+}
+
+.footer-col {
+  max-width: 30%;
+}
+
+.footer-column-header {
+  color: #808080;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.footer-column-menu {
+  font-size: 0.69rem;
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.footer-container {
+  margin-bottom: 5rem;
+}
+
+.send-btn {
+  margin-top: 1.1rem;
 }
