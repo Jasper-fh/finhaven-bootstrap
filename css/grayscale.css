@@ -311,12 +311,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  opacity:.5;
-}
-
-.platform-trading-section:hover {
   opacity: 1;
-  transition:opacity 500ms ease-in-out;
 }
 
 .platform-club-section {
@@ -329,12 +324,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  opacity:.5;
-}
-
-.platform-club-section:hover {
   opacity: 1;
-  transition:opacity 500ms ease-in-out;
 }
 
 .media-section{
@@ -477,7 +467,7 @@ a {
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #6E6E6E;
 }
 
 .bg-black {
@@ -557,4 +547,27 @@ footer {
  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);  
   display: inline-block;
+}
+
+.platform-trading-section .row:after,
+.platform-club-section .row:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: rgba(0,0,0,0.5);
+  display: block;
+  height: 100%;
+}
+
+.platform-trading-section .row:hover:after,
+.platform-club-section .row:hover:after {
+  display: none;
+}
+
+.platform-trading-section .row,
+.platform-club-section .row {
+  transition: background 500ms ease-in;
 }
