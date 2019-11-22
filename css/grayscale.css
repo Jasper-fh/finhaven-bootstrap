@@ -160,7 +160,6 @@
 .masthead a {
   padding: 1.2rem 1.875rem;
   font-weight: 900;
-  z-index: 10;
 }
 
 @media (min-width: 768px) {
@@ -206,8 +205,6 @@
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 0.625rem 2rem;
   font-family: Raleway-Bold;
-  font-size: 80%;
-  text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
 }
