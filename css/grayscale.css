@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: Raleway;
-  src: url(../font/Raleway-Medium.ttf);
+  src: url(../font/Raleway-Regular.ttf);
 }
 
 @font-face {
@@ -139,7 +139,7 @@
   font-size: 1rem;
 }
 
-.masthead h4 {
+.masthead p {
   font-size: 1rem;
   line-height: 2rem;
   color: #fff;
@@ -168,7 +168,7 @@
     line-height: 2.8rem;
     max-width: 70%;
   }
-  .masthead h4 {
+  .masthead p {
     font-size: 1.2rem;
     line-height: 2.2rem;
     color: #fff;
@@ -192,7 +192,7 @@
     max-width: 30rem;
     font-size: 1.25rem;
   }
-  .masthead h4 {
+  .masthead p {
     font-size: 1.125rem;
     line-height: 2.2rem;
     max-width: 45%;
@@ -203,7 +203,7 @@
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 0.625rem 2rem;
+  padding: 0.47rem 2rem;
   font-family: Raleway-Bold;
   letter-spacing: .15rem;
   border: 0;
@@ -272,8 +272,9 @@
 }
 
 .about-section h4,
-.media-section h4 {
-  font-size: 1.125rem;
+.media-section h4,
+.platforms-section h4 {
+  font-size: 1.06rem;
   line-height: 2.2rem;
   color: #fff;
   -webkit-background-clip: text;
@@ -289,11 +290,15 @@
   font-size: 1.56rem;
 }
 
-.platforms-section h4 {
-  font-size: 1.125rem;
+.platforms-section p {
+  /* font-size: 1.125rem;
   line-height: 2.2rem;
   color: #fff;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
+  padding: 0.6rem;
+  margin-bottom: 5rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }
 
 .platform-trading-section {
@@ -332,8 +337,12 @@
   transition:opacity 500ms ease-in-out;
 }
 
-.media-section .card-body {
-  color: #000;
+.media-section{
+  background-color: #1b1b1b;
+}
+
+.media-card {
+  background-color: #000;
 }
 
 .projects-section {
@@ -342,6 +351,10 @@
 
 .projects-section .featured-text {
   padding: 2rem;
+}
+
+.platform-card {
+  z-index: 1000;
 }
 
 @media (min-width: 992px) {
@@ -368,8 +381,7 @@
 }
 
 .signup-section {
-  padding: 4rem 0;
-  background-color: #212121;
+  padding: 8rem 0 5rem 0;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -515,8 +527,9 @@ footer {
   margin-bottom: 5rem;
 }
 
-.send-btn {
+.sybmit-btn {
   margin-top: 1.1rem;
+  padding: 
 }
 
 .overlay{
