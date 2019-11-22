@@ -11,8 +11,20 @@
 }
 
 @font-face {
+  font-family: Rufina-Bold;
+  src: url(../font/Rufina-Bold.ttf);
+  /* src: url(../font/Rufina-Bold.ttf); */
+}
+
+@font-face {
   font-family: Raleway;
   src: url(../font/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(../font/Raleway-Bold.ttf);
+  /* src: url(../font/Rufina-Bold.ttf); */
 }
 
 #mainNav {
@@ -32,6 +44,11 @@
 #mainNav .navbar-brand {
   color: #fff;
   font-weight: 700;
+}
+
+#mainNav .navbar-nav .nav-item a {
+  font-size: 0.85rem;
+  font-weight: 900;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -59,7 +76,7 @@
   }
   #mainNav .nav-link {
     transition: none;
-    padding: 2rem 1.5rem;
+    padding: 2rem;
     color: #fff;
     transition: transform 0.5s ease;
   }
@@ -101,14 +118,14 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../img/main-hero.png");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
 .masthead h1 {
-  font-family: Rufina;
+  font-family: Rufina-Bold;
   font-size: 2rem;
   color: #fff;
   /* letter-spacing: 0.8rem; */
@@ -131,13 +148,19 @@
 
 .masthead a,
 .contact-section button {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #32C5FF;
   background-color: transparent;
   border: solid 1px #32C5FF;
   text-align: center;
   letter-spacing: .5px;
-  font-weight: 800;
+}
+
+
+.masthead a {
+  padding: 1.2rem 1.875rem;
+  font-weight: 900;
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
@@ -182,7 +205,7 @@
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 0.625rem 2rem;
-  font-family: 'Varela Round';
+  font-family: Raleway-Bold;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
@@ -518,4 +541,10 @@ footer {
   left:50%;
   transform:translate(-50%,-50%);
   color:#fff;
+}
+
+.blur {
+ -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);  
+  display: inline-block;
 }
