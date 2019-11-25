@@ -1,0 +1,446 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navigation */
+.dropdown-toggle::after {
+  content: none;
+}
+
+.bg-dark {
+  background: transparent;
+}
+
+.navbar {
+  padding: 1rem 1rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav a {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  margin-right: 1.7rem;
+  margin-left: 1.7rem;
+}
+
+.dropdown-menu,
+.dropdown-item {
+  background-color: #000;
+  color: #fff;
+}
+
+.dropdown-item.active {
+  background-color: #000;
+}
+
+.darken-nav {
+  background-color: #000;
+  transition:500ms ease;
+}
+
+/* Hero */
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("./img/main-hero.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: Rufina;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1.02px;
+  /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  background-clip: text;;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+.masthead p {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.masthead a,
+.contact-section button {
+  /* text-decoration: none; */
+  color: #32C5FF;
+  background-color: transparent;
+  border: solid 1px #32C5FF;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+
+.masthead a {
+  padding: 1.2rem 1.875rem;
+  /* font-weight: 800; */
+}
+
+.masthead .blur {
+  -webkit-backdrop-filter: blur(6px);
+   backdrop-filter: blur(6px);  
+   display: inline-block;
+ }
+
+.btn-primary {
+  background-color: #3BB9FF;
+  font-weight: 800;
+}
+
+.btn-primary:hover {
+  background-color: #32C5FF;
+}
+
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 0.47rem 2rem;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    max-width: 70%;
+  }
+  .masthead p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #fff;
+    max-width: 60%;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 3.3rem;
+    line-height: 4.6rem;
+    max-width: 60%;
+    /* letter-spacing: 0.8rem; */
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+  .masthead p {
+    font-size: 1.125rem;
+    line-height: 2.2rem;
+    max-width: 45%;
+    color: #fff;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+/* Partner Sectoin */
+.partners-section {
+  padding-top: 10rem;
+  padding: 8rem 0 10rem 0;
+}
+
+.partners-section p {
+  margin-bottom: 5rem;
+}
+
+.partners-section h2,
+.contact-section h2 {
+  font-family: Rufina;
+}
+
+.partners-section img{
+  margin-top: 25px;
+}
+
+/* About Us Section */
+.about-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background: url("./img/aboutus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.platforms-section h2,
+.about-section h2,
+.media-section h2 {
+  font-family: Rufina;
+}
+
+.about-section h4,
+.media-section h4,
+.platforms-section h4 {
+  font-size: 1.06rem;
+  line-height: 2.2rem;
+  color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Platfroms */
+.platforms-section h3,
+.media-section h3 {
+  font-family: Rufina;
+}
+
+.platforms-section h3,
+.media-section h3 {
+  font-size: 1.56rem;
+}
+
+.platforms-section p {
+  /* font-size: 1.125rem;
+  line-height: 2.2rem;
+  color: #fff;
+  -webkit-background-clip: text; */
+  padding: 0.6rem;
+  margin-bottom: 5rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.platform-trading-section {
+  position: relative;
+  width: auto;
+  height: 100%;
+  min-height: 30rem;
+  background: url("./img/platform_trading.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  opacity: 1;
+}
+
+.platform-club-section {
+  position: relative;
+  width: auto;
+  height: 100%;
+  min-height: 30rem;
+  background: url("./img/platform_club.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  opacity: 1;
+}
+
+.platform-trading-section .row:after,
+.platform-club-section .row:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: rgba(0,0,0,0.5);
+  display: block;
+  height: 100%;
+}
+
+.platform-trading-section .row:hover:after,
+.platform-club-section .row:hover:after {
+  display: none;
+}
+
+.platform-trading-section .row,
+.platform-club-section .row {
+  transition: background 500ms ease-in;
+}
+
+.platform-card {
+  z-index: 1000;
+}
+
+/* Media */
+.media-section{
+  background-color: #1b1b1b;
+}
+
+.media-card {
+  background-color: #000;
+}
+
+/* Subscribe */
+.signup-section {
+  padding: 8rem 0 5rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 0.625rem 2rem;
+  height: auto;
+  font-size: 80%;
+  letter-spacing: 0.15rem;
+  border: 0;
+  max-width: 410px;
+}
+
+.signup-section .blockquote {
+  font-family: Rufina;
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.flex-fill {
+  -ms-flex: 1 1 auto!important;
+  flex: 1 1 auto!important;
+}
+
+/* Contact */
+.contact-section {
+  padding: 10rem 0 3rem 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background: url("./img/footer-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.contact-section h5,
+.contact-section p {
+  font-size: 0.875rem;
+}
+
+.contact-section img {
+  max-height: 21px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  background-color: #212121;
+  border: none;
+}
+
+.contact-section form {
+  margin-top: 5rem;;
+}
+
+.contact-section .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social,
+.contact-section .social-mobile {
+  margin-top: 7rem;
+  padding-top: 1rem;
+}
+
+.contact-section .social-mobile a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a,
+.contact-section .social-mobile a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.contact-section .social,
+.contact-section .social-mobile a:active {
+  color: #fff;
+}
+
+.contact-section .icon-img {
+  min-width: 30px;
+  margin-right: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+/* Footer */
+.footer-col {
+  max-width: 30%;
+}
+
+.footer-column-header {
+  color: #808080;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-column-menu {
+  font-size: 0.69rem;
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.footer-container {
+  margin-bottom: 5rem;
+}
